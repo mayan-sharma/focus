@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 350px;
+            height: 400px;
+        }
+
+        .container {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        input {
+            padding: 1rem;
+            width: 50px;
+            font-size: 1.5rem;
+            /* appearance: none; */
+        }
+
+        button {
+            width: 200px;
+            color: #fff;
+            padding: 1rem;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 14px;
+        }
+
+        button#end {
+            display: none;
+        }
+
+        .green {
+            background-color: rgb(35, 207, 35);
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>focus</h1>
+        <div>
+            <input type="number" id="time" min="1" value="5" /> min
+            <div id="content"></div>
+        </div>
+        <button class="green" id="start">Start Session</button>
+    </div>
+
+    <script src="./popup.js"></script>
+</body>
+</html>
